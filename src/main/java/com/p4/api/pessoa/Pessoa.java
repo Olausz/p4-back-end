@@ -15,4 +15,9 @@ public class Pessoa {
     private String email;
     private String fone;
 
+    public Pessoa(CadastroPessoaDados dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.fone = dados.fone();
+    }
 }
